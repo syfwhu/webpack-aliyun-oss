@@ -69,7 +69,7 @@ class WebpackAliyunOss {
 				try {
 					await this.upload(files, true, outputPath);
 					console.log('');
-					console.log(' All files uploaded successfully '.bgGreen.bold.white);
+					console.log(' All files uploaded successfully ');
 				} catch (err) {
 					compilation.errors.push(err);
 					return Promise.reject(err);
@@ -91,7 +91,7 @@ class WebpackAliyunOss {
 			try {
 				await this.upload(files);
 				console.log('');
-				console.log(' All files uploaded successfully '.bgGreen.bold.white);
+				console.log(' All files uploaded successfully ');
 			} catch (err) {
 				return Promise.reject(err);
 			}
@@ -118,11 +118,11 @@ class WebpackAliyunOss {
 
 		if (test) {
 			console.log('');
-			console.log('Currently running in test mode. your files won\'t realy be uploaded.'.green.underline);
+			console.log('Currently running in test mode. your files won\'t realy be uploaded.');
 			console.log('');
 		} else {
 			console.log('');
-			console.log('Your files will be uploaded very soon.'.green.underline);
+			console.log('Your files will be uploaded very soon.');
 			console.log('');
 		}
 
@@ -230,7 +230,7 @@ class WebpackAliyunOss {
 		// this.filesIgnored.length && console.log('files ignored due to not overwrite'.blue, this.filesIgnored);
 
 		if (this.filesErrors.length) {
-			console.log(' UPLOAD ENDED WITH ERRORS '.bgRed.white, '\n');
+			console.log(' UPLOAD ENDED WITH ERRORS ', '\n');
 			logToLocal && fs.writeFileSync(path.resolve('upload.error.log'), JSON.stringify(this.filesErrors, null, 2))
 
 			return Promise.reject(' UPLOAD ENDED WITH ERRORS ')
