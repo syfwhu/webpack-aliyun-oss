@@ -11,6 +11,7 @@ class WebpackAliyunOss {
 			region,
 			accessKeyId,
 			accessKeySecret,
+			stsToken,
 			bucket
 		} = options;
 
@@ -34,6 +35,7 @@ class WebpackAliyunOss {
 			region,
 			accessKeyId,
 			accessKeySecret,
+			stsToken,
 			bucket
 		})
 
