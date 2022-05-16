@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "ali-oss": "^6.10.0",
-    "colors": "^1.4.0",
     "fs-extra": "^8.1.0",
     "globby": "^10.0.1",
     "listr": "^0.14.3"

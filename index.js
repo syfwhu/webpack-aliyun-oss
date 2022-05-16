@@ -3,7 +3,6 @@ const path = require('path');
 const OSS = require('ali-oss');
 const globby = require("globby");
 const Listr = require('listr');
-require('colors');
 
 class WebpackAliyunOss {
 	constructor(options) {
